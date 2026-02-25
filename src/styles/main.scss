@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: #fff2f2;
+  align-items: center;
+
+  .logo {
+    width: 120px;
+  }
+
+  nav a {
+    margin-left: 25px;
+    color: #e60000;
+    text-decoration: none;
+    font-weight: bold;
+font-size: larger;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 80px;
+  
+   background: linear-gradient(to bottom, #ffe6ee, #fff);
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+img:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    text-shadow: 0 8px 25px rgba(255, 0, 85, 0.6);
+}
+  .hero-text {
+     
+    flex: 1;
+    padding: 10px;
+    margin-top: 40px;
+     border: none;
+     box-shadow: none;
+     border-radius: 10px;
+     
+  }
+  .mohabbat{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  
+    letter-spacing: 2px;
+
+    /* Gradient */
+    background: linear-gradient(45deg, #ff2e63, #ff8fab, #f4d6f7);
+
+    /* Important for gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    /* Shadow */
+    text-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+     
+  }
+  .mohabbat:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    text-shadow: 0 8px 25px rgba(255, 0, 85, 0.6);
+}
+  .shayari{
+
+    width: 200px;
+    margin-top: 40px;
+    font-size: medium;
+    font-style: italic;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.8;
+    
+    
+  }
+}
+
+.pricing-section {
+  text-align: center;
+  padding: 40px;
+
+  .prices {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+
+
+    .price-card {
+      background: #ffe6e6;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+    }
+    .price-card img{
+      width: 200px;
+    }
+  }
+}
+
+.contact-section {
+  padding: 40px;
+  text-align: center;
+
+  form {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ffeeee;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .prices {
+    flex-direction: column;
+  }
+}
