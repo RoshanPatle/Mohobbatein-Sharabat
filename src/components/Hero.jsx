@@ -1,3 +1,6 @@
+import heropng from '../assets/logo.png'
+
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -9,7 +12,7 @@ export default function Hero() {
 <span>जहाँ स्वाद मिले भरोसे के साथ,</span>
 वहीं बिकता है मोहब्बत का शरबत।</p>
       </div>
-      <img src="./src/assets/logo.png" alt="Refreshing Sharbat" />
+      <img src={heropng} alt="Refreshing Sharbat" />
     </section>
   );
 }

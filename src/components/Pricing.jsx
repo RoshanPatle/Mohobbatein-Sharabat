@@ -1,15 +1,19 @@
+import smallGlass from '../assets/small-glass.png'
+import fullGlass from '../assets/full-glass1.png'
+
+
 export default function Pricing() {
   return (
     <section id="pricing" className="pricing-section">
       <h2>Our Price</h2>
       <div className="prices">
         <div className="price-card">
-          <img src="./src/assets/small-glass.png" alt="" />
+          <img src={smallGlass} alt="" />
           <h3>Regular</h3>
           <p>₹ 40 / Glass</p>
         </div>
         <div className="price-card">
-          <img src="./src/assets/full-glass1.png" alt="" />
+          <img src={fullGlass} alt="" />
           <h3>Large</h3>
           <p>₹ 60 / Glass</p>
         </div>
