@@ -7,3 +7,60 @@
     width: 200px;
     padding-top: 0;
 }
+
+
+
+
+
+.container {
+  position: relative;
+}
+
+/* Hamburger icon */
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background: black;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #333;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+}
+
+.menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: #555;
+}
+
+.menu.active {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+.contact-container{
+     max-width: 1000px;
+}
+
+ .logo .logoName{
+    display: none;
+ }
+}
