@@ -3,6 +3,9 @@ import "../styles/header.css";
 import logopng from '../assets/logo2.png'
 import logopng1 from '../assets/logo1.png'
 
+
+
+
 export default function Header() {
  
   return (
@@ -13,8 +16,8 @@ export default function Header() {
      
         
         <nav>
-        <a href="#home">Home</a>
-        <a href="#pricing">Pricing</a>
+        <a href='#'>Home</a>
+        <a href='#'>Pricing</a>
         <a href="#recipe">Recipe</a>
         <a href="#contact">Contact</a>
       </nav>
