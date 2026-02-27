@@ -34,7 +34,8 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <section id="contact">
+    <div   className="contact-container">
 
       <h2>Contact Mohabbtein Sharbat</h2>
       <p className="contact-subtitle">
@@ -88,6 +89,7 @@ function Contact() {
       </div>
 
     </div>
+    </section>
   );
 }
 
