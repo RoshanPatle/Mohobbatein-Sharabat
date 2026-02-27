@@ -1,66 +1,107 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header img{
-    width: 200px;
-    padding-top: 0;
-}
 
 
 
+/* Header Layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-
-.container {
+  background: white;
   position: relative;
 }
 
-/* Hamburger icon */
-.hamburger {
-  width: 30px;
-  cursor: pointer;
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
 }
 
-.bar {
-  height: 4px;
-  width: 100%;
+.logoIcon {
+  width: 100px;
+  
+}
+
+.logoName {
+width: 50px;
+
+}
+
+/* Navigation Desktop */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
   background: black;
-  margin: 5px 0;
   transition: 0.3s;
 }
 
-/* Menu */
-.menu {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: #333;
-  width: 200px;
-  display: none;
-  flex-direction: column;
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.menu a {
-  color: white;
-  padding: 10px;
-  text-decoration: none;
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
 }
 
-.menu a:hover {
-  background: #555;
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.menu.active {
-  display: flex;
+/* Mobile Styles */
+@media (max-width: 768px) {
+.logoName {
+display: none;
+
 }
 
-@media (max-width: 600px) {
-.contact-container{
-     max-width: 1000px;
-}
+  .hamburger {
+    display: flex;
+  }
 
- .logo .logoName{
-    display: none;
- }
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: 0.3s;
+  }
+
+  .nav.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
 }

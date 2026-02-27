@@ -45,9 +45,9 @@ function Contact() {
 
         {/* Contact Info */}
         <div className="contact-info">
-          <p><strong>📞 Phone:</strong> +91 9876543210</p>
+          <p><strong>📞 Phone:</strong> +91 7798827586</p>
           <p><strong>📧 Email:</strong> contact@mohabbteinsharbat.com</p>
-          <p><strong>📍 Location:</strong> Mumbai, India</p>
+          <p><strong>📍 Location:</strong> Butibori , Nagpur</p>
         </div>
 
         {/* Contact Form */}

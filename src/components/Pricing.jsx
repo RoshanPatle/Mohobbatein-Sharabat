@@ -10,12 +10,12 @@ export default function Pricing() {
         <div className="price-card">
           <img src={smallGlass} alt="" />
           <h3>Regular</h3>
-          <p>₹ 40 / Glass</p>
+          <p>₹ 20 / Glass</p>
         </div>
         <div className="price-card">
           <img src={fullGlass} alt="" />
           <h3>Large</h3>
-          <p>₹ 60 / Glass</p>
+          <p>₹ 30 / Glass</p>
         </div>
       </div>
     </section>

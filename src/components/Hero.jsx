@@ -1,11 +1,11 @@
-import heropng from '../assets/logo.png'
+import heropng from '../assets/hero.png'
 
 
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-text">
-        <h1 className="mohabbat">Mohabbatein Sharbat</h1>
+        <h1 className="mohabbat">Dilkhush Sharbat</h1>
         <p>Sweet. Chilled. Full of love 💕</p>
         <p className="shayari"><span>गर्मी में राहत, सर्दी में चाहत,</span>
 <span>हर मौसम की पहली राहत।</span>
